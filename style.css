@@ -20,8 +20,10 @@ body{
     flex-wrap: wrap;
 }
 .js-made{
-    background-color: coral;
-    outline: auto;
     flex-grow: 1;
     flex-shrink: 1;
+    outline: auto;
+}
+.hovered{
+    background-color: black;
 }

@@ -12,6 +12,10 @@ function createGrid(gridLength){
         let div = document.createElement("div");
         div.setAttribute("class", "js-made");
         div.style.cssText = `flex-basis: ${flexBasis}%;`;
+        div.onmouseover = e => {
+
+            e.target.setAttribute("class", "hovered");
+        };
         gridContainer.appendChild(div);
     }
 }
