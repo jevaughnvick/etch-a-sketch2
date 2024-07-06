@@ -7,13 +7,21 @@
     padding: 0;
 }
 body{
+    font-family: Tahoma, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
+.btn-parent{
+    display: flex;
+    justify-content: center;
+}
+.grid-parent{
+    display: flex;
+    justify-content: center;
+}
 #grid-container{
-    outline: auto;
+    /* outline: auto; */
     width: 500px;
     height: 500px;
     display: flex;
@@ -26,4 +34,12 @@ body{
 }
 .hovered{
     background-color: black;
+}
+button{
+    font-family: inherit;
+    font-size: 16px;
+    padding: 4px 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
