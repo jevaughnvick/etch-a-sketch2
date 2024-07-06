@@ -1,9 +1,12 @@
 const gridContainer = document.querySelector("#grid-container");
+const makeGridBtn = document.querySelector("#make-grid");
 
 
-
+makeGridBtn.addEventListener("click", showPopupforGridLength);
 
 function createGrid(gridLength){
+
+    gridContainer.innerHTML = "";
 
     let flexBasis = 100 / gridLength;
 
@@ -20,5 +23,17 @@ function createGrid(gridLength){
     }
 }
 
+function showPopupforGridLength(){
 
-createGrid(16)
+    while (true) {
+        const gridLength = prompt("Enter number of squares (per side): ", "");
+        if(gridLength > 100){
+            alert("Each side should total 100 squares or less.");
+        }else if(gridLength === null){
+            break;
+        }else{
+            createGrid(gridLength);
+            break;
+        }
+    }
+}
