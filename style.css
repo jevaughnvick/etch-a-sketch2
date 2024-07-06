@@ -1,0 +1,27 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#grid-container{
+    outline: auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.js-made{
+    background-color: coral;
+    outline: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
